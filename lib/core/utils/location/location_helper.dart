@@ -111,7 +111,7 @@ class LocationHelper {
     print('url: $url');
 
     final response = await http.get(Uri.parse(url));
- 
+
     if (response.statusCode == 200) {
       final data = json.decode(response.body);
       if (data['routes'] != null && data['routes'].isNotEmpty) {
