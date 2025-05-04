@@ -1,0 +1,2 @@
+F:/matrix/q_trip/q_trip_user/android/app/.cxx/Debug/1r2m5j2k/armeabi-v7a/CMakeFiles/edit_cache.dir
+F:/matrix/q_trip/q_trip_user/android/app/.cxx/Debug/1r2m5j2k/armeabi-v7a/CMakeFiles/rebuild_cache.dir

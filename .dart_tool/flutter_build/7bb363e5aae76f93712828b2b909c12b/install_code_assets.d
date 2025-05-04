@@ -1,0 +1,1 @@
+ F:\\matrix\\q_trip\\q_trip_user\\.dart_tool\\flutter_build\\7bb363e5aae76f93712828b2b909c12b\\native_assets.json: 
