@@ -1,0 +1,105 @@
+
+import 'dart:convert';
+
+import 'package:q_trip_user/data/model/response/trip_vehicle_model.dart';
+
+import '../../../domain/entities/trip_history_entity.dart';
+
+
+class TripHistoryModel extends TripHistoryEntity{
+  const TripHistoryModel({
+    required super.id,
+    required super.driverName,
+    required super.driverMobile,
+    required super.driverImage,
+    required super.rate,
+    required super.clientRate,
+    required super.clientRateNote,
+    required super.clientName,
+    required super.clientPhone,
+    required super.clientPhoneCountryCode,
+    required super.car,
+    required super.vehicleType,
+    required super.vehicleDescription,
+    required super.fromAddress,
+    required super.fromLat,
+    required super.fromLng,
+    required super.toAddress,
+    required super.toLat,
+    required super.toLng,
+    required super.price,
+    required super.paymentMethod,
+    required super.promoCode,
+    required super.status,
+    required super.tripStatus,
+    required super.createdAt,
+    required super.date,
+    required super.expectedTime,
+    required super.distance,
+  });
+
+
+
+  factory TripHistoryModel.fromJson(Map<String, dynamic> json) => TripHistoryModel(
+    id: json["id"]??0,
+    driverName: json["driver_name"]??'',
+    driverMobile: json["driver_mobile"]??'',
+    driverImage: json["driver_image"]??'',
+    rate: json["rate"],
+    clientRate: json["client_rate"]??0,
+    clientRateNote: json["client_rate_note"]??'',
+    clientName: json["client_name"]??'',
+    clientPhone: json["client_phone"]??'',
+    clientPhoneCountryCode: json["client_phone_country_code"]??'',
+    car: TripVehicleModel.fromJson(json["car"] is List?{}:json["car"]),
+    // cars: List<VehicleModel>.from(json["car"].map((x) => VehicleModel.fromJson(x))),
+    vehicleType: json["vehicle_type"]??'',
+    vehicleDescription: json["vehicale_description"]??'',
+    fromAddress: json["from_address"]??'',
+    fromLat: json["from_lat"]??0.0,
+    fromLng: json["from_lng"]??0.0,
+    toAddress: json["to_address"]??'',
+    toLat: json["to_lat"]??0.0,
+    toLng: json["to_lng"]??0.0,
+    price: json["price"]??0.0,
+    paymentMethod: json["payment_method"]??'',
+    promoCode: json["promo_code"]??'',
+    status: json["status"]??'',
+    tripStatus: json["trip_status"]??'',
+    createdAt: json["created_at"]??'',
+    date: json["date"]??'',
+    expectedTime: json["expected_time"]??'',
+    distance: json["distance"]??'',
+  );
+
+  // Map<String, dynamic> toJson() => {
+  //   "id": id,
+  //   "driver_name": driverName,
+  //   "driver_mobile": driverMobile,
+  //   "driver_image": driverImage,
+  //   "rate": rate,
+  //   "client_rate": clientRate,
+  //   "client_rate_note": clientRateNote,
+  //   "client_name": clientName,
+  //   "client_phone": clientPhone,
+  //   "client_phone_country_code": clientPhoneCountryCode,
+  //   "car": List<dynamic>.from(cars.map((x) => x)),
+  //   "vehicle_type": vehicleType,
+  //   "vehicale_description": vehicleDescription,
+  //   "from_address": fromAddress,
+  //   "from_lat": fromLat,
+  //   "from_lng": fromLng,
+  //   "to_address": toAddress,
+  //   "to_lat": toLat,
+  //   "to_lng": toLng,
+  //   "price": price,
+  //   "payment_method": paymentMethod,
+  //   "promo_code": promoCode,
+  //   "status": status,
+  //   "trip_status": tripStatus,
+  //   "created_at": createdAt,
+  //   "date": date,
+  //   "expected_time": expectedTime,
+  //   "distance": distance,
+  // };
+}

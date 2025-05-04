@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "1099349948676",
+    "firebase_url": "https://q-taxi-c9463-default-rtdb.firebaseio.com",
+    "project_id": "q-taxi-c9463",
+    "storage_bucket": "q-taxi-c9463.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1099349948676:android:bd706d0afafb9e9a533851",
+        "android_client_info": {
+          "package_name": "com.QTrip"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAw7vkKvPYmwHlaP01MLs43_Z2V2jZ28B4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1099349948676:android:ab070fb080ecbe0c533851",
+        "android_client_info": {
+          "package_name": "com.Qtrip.driver"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAw7vkKvPYmwHlaP01MLs43_Z2V2jZ28B4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

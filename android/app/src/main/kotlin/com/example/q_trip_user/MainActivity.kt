@@ -1,0 +1,5 @@
+package com.QTrip
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity : FlutterActivity()
